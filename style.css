@@ -1,0 +1,131 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.main{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(125,125,100,.5);
+	float: left;
+}
+
+.children{
+  text-align: center;
+}
+
+#one{
+  width: 100%;
+  height: 10%;
+	float: left;
+	background-color: rgba(225,125,100,1);
+  position: relative;
+  text-align: center;
+}
+
+#one > h1{
+  position: relative;
+  top: 50%;
+  /*left:50%;*/
+}
+
+#two{
+  width: 100%;
+  height: 30%;
+	float: left;
+  position: relative;
+  /*clear: left;*/
+	background-color: rgba(125,225,100,1);
+}
+
+#two table{
+  width: 50%;
+  height: 20%;
+  position: relative;
+  top: 30%;
+  left: 50%;
+  margin-left: -25%;
+  overflow: auto;
+}
+
+#two table, th, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+#three{
+	float: left;
+  width: 25%;
+  height: 15%;
+  /*clear: left;*/
+	background-color: rgba(125,225,225,1);
+}
+
+#four{
+	float: right;
+  width: 25%;
+  height: 15%;
+  /*clear: left;*/
+	background-color: rgba(225,90,70,1);
+}
+
+#five{
+	/*float: left;*/
+  clear: left;
+  width: 50%;
+  height: 5%;
+  margin-left: 25%;
+	background-color: rgba(225,90,170,1);
+}
+#six{
+	/*float: left;*/
+  clear: left;
+  width: 40%;
+  height: 5%;
+  margin-left: 30%;
+	background-color: rgba(225,190,100,1);
+}
